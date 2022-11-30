@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/STRSHOP/static/css/main.e71aa5d1.css",
+    "main.js": "/STRSHOP/static/js/main.505b17f8.js",
+    "static/media/NotFound.png": "/STRSHOP/static/media/NotFound.96f3f1709a836608eeaa.png",
+    "static/media/empty-cart.png": "/STRSHOP/static/media/empty-cart.f171cfaaa87def1612bb.png",
+    "static/media/logo.png": "/STRSHOP/static/media/logo.2e1246fb0a31b3919ff1.png",
+    "index.html": "/STRSHOP/index.html",
+    "main.e71aa5d1.css.map": "/STRSHOP/static/css/main.e71aa5d1.css.map",
+    "main.505b17f8.js.map": "/STRSHOP/static/js/main.505b17f8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e71aa5d1.css",
+    "static/js/main.505b17f8.js"
+  ]
+}
