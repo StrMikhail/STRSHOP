@@ -1,0 +1,72 @@
+@import './variables';
+@import 'libs/normalize';
+
+@import 'components/all';
+
+body {
+  background-color: $background;
+}
+
+.wrapper {
+  width: calc(100vw - 100px);
+  height: 101%;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 10px;
+  max-width: 1400px;
+}
+
+.content {
+  padding: 40px 0;
+
+  &__title {
+    margin: 35px 0;
+    &:first-letter {
+      text-transform: uppercase;
+  }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    // gap: 1rem;
+  }
+  &--items{
+    display: block;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 1235px) {
+      flex-direction: column-reverse;
+      gap: 2rem;
+    }
+  }
+}
+
+.container {
+  width: $container-width;
+  margin: 100px auto 0;
+}
+
+
+@media (max-width: 895px) {
+  .content {
+    padding: 0;
+  }
+  .container {
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+@media (max-width: 811px) {
+  .content {
+    padding: 0;
+    &__items {
+      justify-items: center;
+    }
+  }
+
+}
+

@@ -1,0 +1,42 @@
+@import '../../../../scss/variables';
+
+.cart_header {
+    display: flex;
+    justify-content: space-between;
+    padding: $paddingInner 0;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: $paddingInner;
+    div{
+        display: flex;
+        gap: 10px;
+        cursor: pointer;
+        transition: $transition;
+        opacity: $opacityOff;
+        &:hover {
+            scale: 1.05;
+            opacity: $opacityHover;
+        }
+    }
+}
+
+.cart_buttom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 100px;
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width: 690px) {
+    .cart_buttom{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

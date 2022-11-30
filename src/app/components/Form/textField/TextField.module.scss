@@ -1,0 +1,66 @@
+@import '../../../../scss/variables';
+
+.text_filed {
+    margin-bottom: $marginBottom;
+    position: relative;
+    label{
+        position: absolute;
+        font-size: 1.2rem;
+        z-index: 1;
+        color: lightgrey;
+        background-color: #fff;
+        top: 35%;
+        left: 30px;
+        transition: $transition;
+    }
+}
+.group_field {
+        position: relative;
+        span {
+            cursor: pointer;
+            position: absolute;
+            font-size: 40px;
+            bottom: 20px;
+            right: 20px;
+            transition: $transition;
+            opacity: $opacityOff;
+            &:hover {
+                transform: scale(1.1);
+                color: $orange;
+                opacity: $opacityHover;
+            }
+        }
+        span.active {
+            transform: rotate(180deg);
+        }
+        .active_label{
+            color: $black;
+            top: -4px;
+            padding: 0 $paddingInner / 2;
+            border-radius: $borderRadius;
+            border: 1px solid lightgrey;
+        }
+    }
+.input_field {
+    &:focus {
+        border-color: orange;
+
+    }
+    &:focus~label{
+        color: $orange;
+        top: -4px;
+        padding: 0 $paddingInner;
+        border-radius: $borderRadius;
+        border: 1px solid $orange;
+        letter-spacing: 1.5px;
+    }
+}
+.error {
+    height: 1rem;
+    color: red;
+    padding-left: 20px;
+
+}
+.input_error{
+    border-color: red;
+}

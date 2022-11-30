@@ -1,0 +1,74 @@
+
+.buttons-line{
+  display: flex;
+  justify-content: space-between;
+}
+.button {
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  gap: 20px;
+  padding: 2rem 1rem;
+  background-color: $orange;
+  height: 4rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  border:none;
+  &:hover{
+    background-color: darken($orange, 8%);
+  }
+  span{
+    color: white;
+  }
+  &--circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    padding: 0;
+    border-width: 2px;
+  }
+    &--cart {
+    display: flex;
+    align-items: center;
+    line-height: 23px;
+    padding: 12px 25px;
+    svg {
+      margin-right: 8px;
+      margin-bottom: 1px;
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 740px) {
+    &--cart{
+      padding: 22px;
+      span, div{
+        display: none;
+      }
+      svg{
+        margin-right: 0;
+      }
+    }
+  }
+}
+.button-counter div{
+  width: 8rem;
+  height: 4rem;
+  span{
+    transition: .3s;
+    &:nth-child(2n + 1):hover{
+      transform: scale(1.5);
+    }
+  }
+}
+
+.button-sm{
+  max-width: 120px;
+}

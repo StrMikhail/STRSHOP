@@ -1,0 +1,48 @@
+.error_message {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  background-color: red;
+  padding: 20px 40px;
+  color: white;
+  border-radius: 40px;
+  font-size: 1.2rem;
+  -webkit-animation: error  1s 1 ease-in-out;
+          animation: error  1s 1 ease-in-out;
+  opacity: 1;
+}
+
+@-webkit-keyframes error {
+  0% {
+    right: -200px;
+    opacity: 0.4;
+  }
+  20% {
+    right: 50px;
+    opacity: 0.6;
+  }
+  30% {
+    right: -50px;
+  }
+  70% {
+    right: 10px;
+  }
+}
+
+@keyframes error {
+  0% {
+    right: -200px;
+    opacity: 0.4;
+  }
+  20% {
+    right: 50px;
+    opacity: 0.6;
+  }
+  30% {
+    right: -50px;
+  }
+  70% {
+    right: 10px;
+  }
+}
+/*# sourceMappingURL=ErrorMessage.module.css.map */

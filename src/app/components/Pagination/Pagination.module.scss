@@ -1,0 +1,38 @@
+@import '../../../scss/variables';
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    span, li>a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        background-color: $orange;
+        margin: 0 10px;
+        height: 60px;
+        width: 60px;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: .3s;
+        color: white;
+        font-size: 1.2rem ;
+        color: white;
+
+        &:hover {
+            transform: scale(1.1);
+            background-color: darken($orange, 8);
+        }
+    }
+    ul {
+        display: flex;
+        .active {
+            background-color: darken($orange, 50);
+            &:hover{
+                background-color: darken($orange, 50);
+            }
+        }
+    }
+}
+

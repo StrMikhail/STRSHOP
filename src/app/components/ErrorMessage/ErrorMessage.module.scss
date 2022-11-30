@@ -1,0 +1,35 @@
+@import '../../../scss/variables';
+
+
+.error_message{
+    position: absolute ;
+    top: 80px;
+    right: 0;
+    background-color: red;
+    padding: $paddingInner $paddingInner*2;
+    color: white;
+    border-radius: $borderRadius;
+    font-size: 1.2rem;
+    animation: error  1s 1 ease-in-out;
+    opacity: 1;
+}
+
+@keyframes error {
+    0% {
+        right: -200px;
+        opacity: 0.4;
+    }
+    20% {
+        right: 50px;
+        opacity: 0.6;
+
+    }
+    30% {
+        right: -50px;
+    }
+    70% {
+        right: 10px;
+    }
+
+
+}

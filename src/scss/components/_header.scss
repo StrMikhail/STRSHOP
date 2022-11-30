@@ -1,0 +1,46 @@
+@import '../variables';
+
+.header {
+  border-bottom: 1px solid $gray-line;
+  padding: 40px 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  &__logo {
+    display: flex;
+
+    img {
+      margin-right: 15px;
+      width: 5rem;
+    }
+
+    h1 {
+      color: #181818;
+      font-size: 24px;
+      letter-spacing: 1%;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    p {
+      color: #7b7b7b;
+    }
+  }
+  @media (max-width: 740px ) {
+    div {
+      font-size: 10px;
+    }
+    img{
+      margin-right: 0;
+    }
+  }
+}

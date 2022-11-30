@@ -1,0 +1,75 @@
+.text_filed {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.text_filed label {
+  position: absolute;
+  font-size: 1.2rem;
+  z-index: 1;
+  color: lightgrey;
+  background-color: #fff;
+  top: 35%;
+  left: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.group_field {
+  position: relative;
+}
+
+.group_field span {
+  cursor: pointer;
+  position: absolute;
+  font-size: 40px;
+  bottom: 20px;
+  right: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.3;
+}
+
+.group_field span:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #ff9f1c;
+  opacity: 0.8;
+}
+
+.group_field span.active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.group_field .active_label {
+  color: #011627;
+  top: -4px;
+  padding: 0 10px;
+  border-radius: 40px;
+  border: 1px solid lightgrey;
+}
+
+.input_field:focus {
+  border-color: orange;
+}
+
+.input_field:focus ~ label {
+  color: #ff9f1c;
+  top: -4px;
+  padding: 0 20px;
+  border-radius: 40px;
+  border: 1px solid #ff9f1c;
+  letter-spacing: 1.5px;
+}
+
+.error {
+  height: 1rem;
+  color: red;
+  padding-left: 20px;
+}
+
+.input_error {
+  border-color: red;
+}
+/*# sourceMappingURL=TextField.module.css.map */

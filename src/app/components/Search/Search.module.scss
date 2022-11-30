@@ -1,0 +1,51 @@
+@import '../../../scss/variables';
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid $gray-line;
+    border-radius: $borderRadius;
+    overflow: hidden;
+    height: 64px;
+    width: 70%;
+    margin: auto 0;
+    input{
+        border: none;
+    }
+}
+
+.input {
+    overflow: hidden;
+    font-size: 16px;
+    transition: $transition;
+    cursor: pointer;
+    opacity: .3;
+}
+.search_icon{
+    width: 20px;
+    position: absolute;
+    left: 12px;
+    opacity: .8;
+}
+.clear_icon{
+    width: 20px;
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    opacity: .3;
+    &:hover{
+        opacity: .8;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .search {
+        width: 200px;
+    }
+    .input {
+        padding-left: 40px;
+    }
+}
