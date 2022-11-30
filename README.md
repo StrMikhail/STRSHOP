@@ -1,2 +1,2 @@
 #Интернет магазин
-https://strmikhail.github.io/
+https://strmikhail.github.io/STRSHOP
